@@ -11,6 +11,7 @@ val border=Color(0x4DE5E5E5)
 val LightOnBackground38 = Color(0x61121212)
 val LightOnBackground87 = Color(0xDE121212)
 val LightOnBackground60 = Color(0x99121212)
+val LightOnBackground = Color(0x99FAFAFA)
 
 
 val Purple40 = Color(0xFF6650a4)

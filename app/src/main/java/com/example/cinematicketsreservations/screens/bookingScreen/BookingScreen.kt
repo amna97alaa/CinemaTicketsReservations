@@ -89,7 +89,7 @@ fun TextChipWithIcon(
 }
 
 @Composable
-fun Present(title: String, description: String) {
+fun Style(title: String, description: String) {
     Column(
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
@@ -109,11 +109,13 @@ fun Present(title: String, description: String) {
 fun BookingScreen(){
     Box(modifier = Modifier
         .fillMaxSize()
-        .background(Color.White)) {
+        .background(Color.White)
+    ) {
         Box(modifier = Modifier
             .fillMaxWidth()
             .height(300.dp)
-            .align(Alignment.TopCenter),) {
+            .align(Alignment.TopCenter)
+        ) {
             Image(
                 modifier = Modifier
                     .fillMaxWidth()
@@ -172,11 +174,11 @@ fun BookingScreen(){
                 modifier = Modifier
                     .fillMaxWidth()
             ) {
-                Present("6.4/10", "IMDb")
+                Style("6.4/10", "IMDb")
                 Spacer(modifier = Modifier.width(16.dp))
-                Present("63%", "Rotten Tomatoes")
+                Style("63%", "Rotten Tomatoes")
                 Spacer(modifier = Modifier.width(16.dp))
-                Present("4/10", "IGN")
+                Style("4/10", "IGN")
             }
 
             Spacer(modifier = Modifier.height(8.dp))

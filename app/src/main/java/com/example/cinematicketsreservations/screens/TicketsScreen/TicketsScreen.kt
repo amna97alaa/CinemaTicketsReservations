@@ -182,18 +182,22 @@ fun TicketScreen() {
             ) {
             Image(
                 modifier = Modifier
+                    .fillMaxWidth()
+                    .align(Alignment.TopCenter)
+                    .padding(bottom = 24.dp),
+                painter = painterResource(id = R.drawable.chairs),
+                contentDescription = "",
+                contentScale = ContentScale.FillWidth
+            )
+
+            Image(
+                modifier = Modifier
                     .align(Alignment.TopStart)
                     .padding(16.dp),
                 painter = painterResource(id = R.drawable.ic_exit),
                 contentDescription = "",
                 contentScale = ContentScale.FillWidth
             )
-
-
-
-
-
-
 
             Row(
                 horizontalArrangement = Arrangement.Center,
